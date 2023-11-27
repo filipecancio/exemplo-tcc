@@ -3,6 +3,12 @@ Modelo de artigo sbc latex
 
 Repositório base para template de artigo tcc em Tex baseado no modelo da SBC - Sociedade Brasileira de Computação disponidel no [site oficial](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos). Este modelo utiliza o projeto [latex-devcontainer](https://github.com/a-nau/latex-devcontainer) para executar o projeto via [codespaces](https://github.com/features/codespaces). E utiliza o [marvinpinto/actions](https://github.com/marvinpinto/actions/tree/v1.2.1) para gerar releases automaticas.
 
+## Como usar o projeto
+Você pode acessar a nossa wiki para ver todos os artigos para melhor uso do projeto. Vamos deixar aqui alguns dos artigos importante para ler logo quando você gera um novo repositório com o `sbc-template`.
+
+### Etapas importantes
+- [Liberar actions no repositório](https://github.com/filipecancio/sbc-template/wiki/Liberar-actions-para-criar-releases)
+
 ## Executando o projeto local
 Como pre requisito você precisará instalar na sua máquina:
 - [MikTex](https://miktex.org/howto/download-miktex).
