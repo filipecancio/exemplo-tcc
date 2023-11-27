@@ -1,0 +1,30 @@
+name: New Release of Latex Document
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  release_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: main.tex
+          working_directory: article/
+          continue_on_error: true
+      - name: Create Release     
+        run: |
+            echo "BUILD_DATE=$(date +'%d-%b-%Y')" >> $GITHUB_ENV
+            mv article/main.pdf article/artigo.pdf
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Artigo Versao ${{ env.BUILD_DATE }}"
+          files: |
+            article/artigo.pdf
