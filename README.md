@@ -6,8 +6,7 @@ Repositório base para template de artigo tcc em Tex baseado no modelo da SBC - 
 ## Como usar o projeto
 Você pode acessar a nossa wiki para ver todos os artigos para melhor uso do projeto. Vamos deixar aqui alguns dos artigos importante para ler logo quando você gera um novo repositório com o `sbc-template`.
 
-### Etapas importantes
-- [Liberar actions no repositório](https://github.com/filipecancio/sbc-template/wiki/Liberar-actions-para-criar-releases)
+- `importante` [Liberar actions no repositório](https://github.com/filipecancio/sbc-template/wiki/Liberar-actions-para-criar-releases)
 
 ## Executando o projeto local
 Como pre requisito você precisará instalar na sua máquina:
